@@ -1,0 +1,398 @@
+/* Global styles */
+/* body {
+    overflow-x: hidden;
+    width: 100%;
+    font-family: "Century Gothic", "Times Roman", sans-serif;
+    background: linear-gradient(135deg, #000000, #000000);
+    min-height: 550px;
+    background-attachment: fixed;
+    color: #333;
+    transition: all 0.3s ease-in-out;
+} */
+/* Body styles */
+body {
+    overflow-x: hidden;
+    width: 100%;
+    font-family: "Century Gothic", "Times Roman", sans-serif;
+    background: linear-gradient(135deg, #F0F8FF, #E0FFFF); /* Light gradient from light blue to light cyan */
+    min-height: 550px;
+    background-attachment: fixed;
+    color: #333;
+    transition: all 0.3s ease-in-out;
+    background-size: 400% 400%; /* Smooth transition effect */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+.row{
+    flex: 1;
+}
+/* Adding a subtle texture */
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('https://www.transparenttextures.com/patterns/just-white.png'); /* Optional subtle texture */
+    pointer-events: none; /* So it doesn't interfere with clicks */
+    opacity: 0.1; /* Very light texture for aesthetic appeal */
+}
+
+/* Text color for better readability */
+h1, h2, h3, h4, h5, h6, p {
+    color: #444; /* Slightly darker text for better contrast */
+}
+
+/* For links and interactive elements */
+a {
+    color: #e75e5e;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #d35454;
+}
+
+
+.bg {
+    min-height: 540px;
+}
+
+.hero {
+    font-size: 5rem; /* Increase font size for prominence */
+    font-weight: bold; /* Make text bold */
+    text-align: left; /* Align text to the left */
+    display: flex; /* Use flex to help center vertically */  
+    padding-left: 7%; /* Add some padding for breathing room */
+    margin-top: 20%;
+
+    /* Gradient Text */
+    background: linear-gradient(to right, black, grey);
+    
+}
+
+.hero-text{
+    font-family: 'typo';
+    padding-left: 7%;
+    font-size: 1.5rem;
+}
+
+/* Font face */
+@font-face {
+    font-family: 'typo';
+    src: url('../fonts/typo.ttf');
+}
+
+@font-face {
+    font-family: 'gothic';
+    src: url('../fonts/gothics.ttf');
+}
+
+/* Panel styling */
+.panel {
+    border: 1px solid #ffffff;
+    border-radius: 10px;
+    margin: 40px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background: #fffdfd;
+    transition: all 0.3s ease;
+}
+.panel-index {
+    border: 1px solid #000000;
+    border-radius: 10px;
+    margin: 40px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background: #ffffff;
+    transition: all 0.3s ease;
+}
+.panel:hover {
+    /* transform: translateY(-5px); */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+/* Title styling */
+.title {    
+    font-family: 'typo';
+    font-size: 24px;
+    color: #000000;
+}
+
+/* Header */
+.header {
+    background: linear-gradient(135deg, #F0F8FF, #E0FFFF); 
+    height: 70px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Logo */
+.logo {
+    font-family: 'typo';
+    font-size: 35px;
+    color: #220c0c;
+    /* margin: 15px; */
+    font-weight: bold;
+    transition: color 0.3s ease;
+    cursor: pointer;
+    margin-left: 6rem;
+    
+}
+/* modal  */
+.modal-login-button{
+    border: 1px solid black;
+    color: white;
+    background-color: #000000;
+}
+.modal-login-button:hover{
+    color: rgb(0, 0, 0);
+    background-color: #ffffff;
+}
+.modal-close-button{
+    border: 1px solid black;
+    color: white;
+    background-color: #2e2d2d;
+}
+.modal-close-button:hover{
+    color: rgb(37, 37, 37);
+    background-color: #9b9b9b;
+}
+
+
+.modal-email-input{
+    border: 1px solid black;
+}
+.modal-password-input{
+    border: 1px solid black;
+}
+
+.modal-title{
+    color: black;
+    margin-left: 24rem;
+}
+
+.close{
+    color: #000000;
+}
+
+/* admin modal */
+.admin-modal-id{
+    border: 1px solid black;
+}
+.admin-modal-password{
+    border: 1px solid black;
+}
+.admin-modal-btn{
+    border: 1px solid black;
+    background-color: #000000;
+    color: #ffffff;
+}
+.admin-modal-btn:hover{
+    border: 1px solid black;
+    background-color: #ffffff;
+    color: #000000;
+}
+/* Title variations */
+.title1 {
+    font-size: 16px;
+}
+
+.title2 {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 20px;
+    color: #000000;
+}
+
+/* test submitted button */
+.test-submitted-btn{
+    pointer-events: none; 
+  cursor: no-drop;  /* Shows a blocked cursor */
+  opacity: 0.5;  
+
+}
+
+/* Button styling */
+.sub1 {
+    width: 90px;
+    color: #fff;
+    background: #0e0d0b;
+    font-size: 15px;
+    height: 35px;
+    margin: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    transition: background 0.1s ease;
+    
+}
+
+.sub1:hover {
+    background: #ffffff;
+    color: #000000;
+
+}
+
+.sub {
+    width: 100%;
+    background-color: #000000;
+    color: #ffffff;
+    font-size: 20px;
+    padding: 5px;
+    margin-top: 15px;
+    margin-right: 20px;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+.sub:hover {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+/* Footer styling */
+/* Wrapper around entire content */
+.body-wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Main content area */
+.content {
+    flex: 1;
+}
+
+/* Footer styling with fixed height */
+.footer {
+    font-size: 15px;
+    text-align: center;
+    border-top: 1px solid #323232;
+    background: linear-gradient(135deg, #000000, #000000);
+    height: 60px;              /* Fixed height */
+    line-height: 60px;         /* Ensures text stays vertically centered within fixed height */
+    box-sizing: border-box;    /* Ensures border doesn’t add extra height */
+    display: flex;
+    align-items: center;       /* Center content vertically */
+    justify-content: center;   /* Center content horizontally */
+    overflow: hidden;          /* Hide overflow if content is too large */
+    padding: 0;                /* Avoid padding that changes height */
+}
+
+/* Footer links */
+.footer a {
+    margin: 10px;              /* Reduce margin if too large */
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    
+}
+
+.footer a:hover {
+    color: #ebebeb;
+    border-bottom: 2px solid rgb(206, 206, 206);
+   
+}
+
+/* Box styling */
+.box {
+    padding: 9px;
+    /* background: #fafafa; */
+    border-radius: 5px;
+}
+
+/* HR styling */
+hr {
+    color: #333;
+    border-top: 1px solid #ddd;
+    margin: 20px 0;
+}
+
+/* Top margin */
+.top {
+    margin-top: 20px;
+}
+
+/* Log styles */
+.log1 {
+    font-family: 'Ubuntu', sans-serif;
+    color: #000000;
+    margin-left: 10px;
+}
+
+.log {
+    margin: 10px;
+    margin-right: 60px;
+    margin-left: 5px;
+    color: #000000;
+    text-decoration: none;
+    font-size: 15px;
+    transition: color 0.3s ease;
+}
+
+.log:hover {
+    color: #262e35;
+    border-bottom: 2px solid #1f1c1c;
+}
+
+
+.btn-search{
+    color: black;
+    background-color: rgb(212, 212, 212);
+    border: 1px solid black;
+}
+.btn-enter-tag{
+    border: 1px solid black;
+}
+
+/* quiz detail button */
+
+.quiz-detail{
+    border: 1px solid black;
+}
+.quiz-detail-btn{
+    background-color: #000000;
+    color: white;
+    border: 1px solid black;
+}
+.quiz-detail-btn:hover{
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    border: 1px solid black;
+}
+
+.hr{
+    background-color: black;
+    height: 3px; /* Adjust for thickness */
+    border: none;
+    margin: 0;
+}
+
+
+.join-with-us{
+    font-size: 3.5rem; /* Increase font size for prominence */
+    font-weight: bold; /* Make text bold */
+    margin-left: 13rem;
+}
+
+/* feedback submit button */
+
+.feedback-submit-btn{
+    background-color: #000000;
+    color: white;
+    border: 1px solid black;
+}
+
+.feedback-submit-btn:hover{
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    border: 1px solid black;
+}
+
+
+.accnt-submit{
+    background-color: black !important;
+    color: white;
+    border: 1px solid black !important;
+}
